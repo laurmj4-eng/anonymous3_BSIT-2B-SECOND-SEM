@@ -32,7 +32,7 @@ Architecture: MVC (Model-View-Controller)
 
 1. Clone the Repository
    
-git clone https://github.com/glenntheprogrammer/CI4-Crud.git
+git clone https://github.com/laurmj4-eng/anonymous3_BSIT-2B-SECOND-SEM
 
 cd CI4-Crud OR Download Zip
 
@@ -76,6 +76,6 @@ This project is open-source and available under the MIT License.
 
 Login Credentials 
 
-User = glennazuelo1@gmail.com
+User = laurmj4@gmail.com
 
-Pass = 1232
+Pass = 1234
