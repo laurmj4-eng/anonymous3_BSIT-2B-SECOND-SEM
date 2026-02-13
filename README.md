@@ -1,3 +1,6 @@
+LEADER : LAURITO
+MEMBER :GENOVA JAMES , ANDREI CHRISTOPHER TAGULALAC, ADRIAN LIRAZAN 
+
 🚀 CodeIgniter 4 CRUD Application (CI4-CRUD)
 
 Welcome to the CI4 CRUD project — a simple, powerful, and beginner-friendly CRUD (Create, Read, Update, Delete) application built using the modern CodeIgniter 4 framework.
@@ -69,7 +72,7 @@ Learn how to build CRUD with CodeIgniter 4
 
 💡 Author
 
-Developed by @glenntheprogrammer
+Developed by laurmj4@gmail.com
 
 📜 License
 This project is open-source and available under the MIT License.
