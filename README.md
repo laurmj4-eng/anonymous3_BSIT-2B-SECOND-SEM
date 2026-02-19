@@ -73,7 +73,7 @@ Learn how to build CRUD with CodeIgniter 4
 
 Developed by glennazuelo1@gmail.com
 
-📜 License
+📜 License haahahaha
 This project is open-source and available under the MIT License.
 
 Login Credentials 
