@@ -28,5 +28,15 @@ $routes->post('profiling/update', 'Profiling::update');
 $routes->delete('profiling/delete/(:num)', 'Profiling::delete/$1');
 $routes->post('profiling/fetchRecords', 'Profiling::fetchRecords');
 
+/// Teacher routes
+$routes->get('/teacher', 'Teacher::index');
+$routes->post('teacher/save', 'Teacher::save');
+$routes->get('teacher/edit/(:segment)', 'Teacher::edit/$1');
+$routes->post('teacher/update', 'Teacher::update');
+$routes->delete('teacher/delete/(:num)', 'Teacher::delete/$1');
+$routes->post('teacher/fetchRecords', 'Teacher::fetchRecords');
+
+
+
 // Logs routes for admin
 $routes->get('/log', 'Logs::log');
