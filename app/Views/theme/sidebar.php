@@ -119,6 +119,13 @@ body.dark-mode .main-sidebar .nav-link:hover {
         <p>Students</p>
     </a>
 </li>
+
+<li class="nav-item">
+    <a href="<?= base_url('staff') ?>" class="nav-link">
+        <i class="nav-icon fas fa-user-tie"></i>
+        <p>Staff</p>
+    </a>
+</li>
    
 
 

@@ -45,5 +45,13 @@ $routes->delete('student/delete/(:num)', 'Student::delete/$1');
 $routes->post('student/fetchRecords', 'Student::fetchRecords');
 
 
+// staff
+$routes->get('/staff', 'Staff::index');
+$routes->post('staff/save', 'Staff::save');
+$routes->get('staff/edit/(:segment)', 'Staff::edit/$1');
+$routes->post('staff/update', 'Staff::update');
+$routes->delete('staff/delete/(:num)', 'Staff::delete/$1');
+$routes->post('staff/fetchRecords', 'Staff::fetchRecords');
+
 // Logs routes for admin
 $routes->get('/log', 'Logs::log');
