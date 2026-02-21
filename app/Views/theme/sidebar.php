@@ -92,6 +92,7 @@ body.dark-mode .main-sidebar .nav-link:hover {
         <p>Activity Logs</p>
       </a>
     </li>
+
     <li class="nav-item">
       <a href="<?= base_url('profiling') ?>" class="nav-link <?= is_active(1, 'profiling') ?>">
         <i class="nav-icon fas fa-id-card"></i>
@@ -127,6 +128,13 @@ body.dark-mode .main-sidebar .nav-link:hover {
     </a>
 </li>
    
+
+<li class="nav-item">
+    <a href="<?= base_url('parents') ?>" class="nav-link">
+        <i class="nav-icon fas fa-user-friends"></i>
+        <p>Parents</p>
+    </a>
+</li>
 
 
 

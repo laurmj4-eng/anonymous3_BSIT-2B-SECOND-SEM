@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 19, 2026 at 01:07 PM
+-- Generation Time: Feb 21, 2026 at 06:10 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -45,6 +45,29 @@ INSERT INTO `login_attempts` (`id`, `email`, `ip_address`, `attempt_time`, `user
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `parents`
+--
+
+CREATE TABLE `parents` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `birthday` date NOT NULL,
+  `address` text NOT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `deleted_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `parents`
+--
+
+INSERT INTO `parents` (`id`, `name`, `birthday`, `address`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, '212', '0000-00-00', '121221211', '2026-02-21 05:09:04', '2026-02-21 05:09:04', NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `profiles`
 --
 
@@ -64,6 +87,45 @@ CREATE TABLE `profiles` (
 
 INSERT INTO `profiles` (`id`, `name`, `birthday`, `address`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'asaas', '0012-12-12', '212121', '2026-02-19 12:06:57', '2026-02-19 12:06:57', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `staff`
+--
+
+CREATE TABLE `staff` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `birthday` date NOT NULL,
+  `address` text NOT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `deleted_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `staff`
+--
+
+INSERT INTO `staff` (`id`, `name`, `birthday`, `address`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, '2121', '0000-00-00', '212121', '2026-02-21 04:40:44', '2026-02-21 04:40:44', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `students`
+--
+
+CREATE TABLE `students` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `birthday` date NOT NULL,
+  `address` text NOT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `deleted_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -106,7 +168,35 @@ INSERT INTO `tbl_logs` (`LOGID`, `USERID`, `ACTION`, `DATELOG`, `TIMELOG`, `user
 (16, '1', 'Login: Glenn Azuelo', '2026-02-19', '20:01:23', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Glenn Azuelo', 'LOGIN'),
 (17, '1', 'Added new profile: asaas', '2026-02-19', '20:06:57', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Glenn Azuelo', 'ADD'),
 (18, '1', 'Logout', '2026-02-19', '20:07:00', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Glenn Azuelo', 'LOGOUT'),
-(19, '1', 'Login: Glenn Azuelo', '2026-02-19', '20:07:04', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Glenn Azuelo', 'LOGIN');
+(19, '1', 'Login: Glenn Azuelo', '2026-02-19', '20:07:04', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Glenn Azuelo', 'LOGIN'),
+(20, '1', 'Login: Glenn Azuelo', '2026-02-21', '12:37:38', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Glenn Azuelo', 'LOGIN'),
+(21, '1', 'Added new staff: 2121', '2026-02-21', '12:40:44', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Glenn Azuelo', 'ADD'),
+(22, '1', 'Added new teacher: 44', '2026-02-21', '12:41:33', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Glenn Azuelo', 'ADD'),
+(23, '1', 'Updated teacher: 44sasa', '2026-02-21', '12:42:07', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Glenn Azuelo', 'UPDATED'),
+(24, '1', 'Added new parent: 212', '2026-02-21', '13:09:04', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', 'Glenn Azuelo', 'ADD');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `teachers`
+--
+
+CREATE TABLE `teachers` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `birthday` date NOT NULL,
+  `address` text NOT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `deleted_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `teachers`
+--
+
+INSERT INTO `teachers` (`id`, `name`, `birthday`, `address`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, '44sasa', '0000-00-00', '23233232', '2026-02-21 04:41:33', '2026-02-21 04:42:07', NULL);
 
 -- --------------------------------------------------------
 
@@ -148,9 +238,27 @@ ALTER TABLE `login_attempts`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `parents`
+--
+ALTER TABLE `parents`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `profiles`
 --
 ALTER TABLE `profiles`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `staff`
+--
+ALTER TABLE `staff`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `students`
+--
+ALTER TABLE `students`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -159,6 +267,12 @@ ALTER TABLE `profiles`
 ALTER TABLE `tbl_logs`
   ADD PRIMARY KEY (`LOGID`),
   ADD KEY `USERID` (`USERID`);
+
+--
+-- Indexes for table `teachers`
+--
+ALTER TABLE `teachers`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
@@ -178,16 +292,40 @@ ALTER TABLE `login_attempts`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
 
 --
+-- AUTO_INCREMENT for table `parents`
+--
+ALTER TABLE `parents`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `profiles`
 --
 ALTER TABLE `profiles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `staff`
+--
+ALTER TABLE `staff`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `students`
+--
+ALTER TABLE `students`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `tbl_logs`
 --
 ALTER TABLE `tbl_logs`
-  MODIFY `LOGID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `LOGID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
+--
+-- AUTO_INCREMENT for table `teachers`
+--
+ALTER TABLE `teachers`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`
