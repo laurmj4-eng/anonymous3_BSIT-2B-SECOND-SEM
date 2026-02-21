@@ -20,13 +20,6 @@ $routes->post('users/update', 'Users::update');
 $routes->delete('users/delete/(:num)', 'Users::delete/$1');
 $routes->post('users/fetchRecords', 'Users::fetchRecords');
 
-// Profiling routes
-$routes->get('/profiling', 'Profiling::index');
-$routes->post('profiling/save', 'Profiling::save');
-$routes->get('profiling/edit/(:segment)', 'Profiling::edit/$1');
-$routes->post('profiling/update', 'Profiling::update');
-$routes->delete('profiling/delete/(:num)', 'Profiling::delete/$1');
-$routes->post('profiling/fetchRecords', 'Profiling::fetchRecords');
 
 /// Teacher routes
 $routes->get('/teacher', 'Teacher::index');

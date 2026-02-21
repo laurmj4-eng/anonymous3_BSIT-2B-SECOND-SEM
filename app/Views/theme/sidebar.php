@@ -93,12 +93,7 @@ body.dark-mode .main-sidebar .nav-link:hover {
       </a>
     </li>
 
-    <li class="nav-item">
-      <a href="<?= base_url('profiling') ?>" class="nav-link <?= is_active(1, 'profiling') ?>">
-        <i class="nav-icon fas fa-id-card"></i>
-        <p>Profiling</p>
-      </a>
-    </li>
+
      <li class="nav-item">
       <a href="<?= base_url('users') ?>" class="nav-link <?= is_active(1, 'users') ?>">
         <i class="nav-icon fas fa-user-lock"></i>
